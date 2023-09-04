@@ -98,7 +98,7 @@ function clearGameBoard() {
     // Reset the game outcome message
     document.querySelector('.heading1').textContent = 'Tic Tac Toe';
 }
-
+// ...
 // Function to make the computer's move
 function makeComputerMove() {
     if (!isGameOver()) {
