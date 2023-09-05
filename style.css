@@ -64,10 +64,11 @@ font-size: 15px;
 }
 
 /* board game style */
-.game-container {
+.containerGame {
     display: inline-block;
     margin-top: 20px;
 }
+
 
 /* Style the rows and cells of the game board */
 .row {
@@ -115,16 +116,18 @@ font-size: 15px;
     margin-top: 20px;
     color: #333;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    flex-direction: column; 
+    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
 }
 
 .restart-button {
-    padding: 10px 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px; /* Copy this padding to the back-button */
     background-color: #007bff;
     color: #fff;
     font-size: 18px;
@@ -133,6 +136,17 @@ font-size: 15px;
     border-radius: 5px;
 }
 
-.restart-button:hover {
-    background-color: #0056b3;
+.restart-button:hover , .back-button:hover {
+    background-color: #8FCFD1;
+}
+
+.back-button {
+    padding:10px 55px; /* Apply the same padding as the restart button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+
 }
